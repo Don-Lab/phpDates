@@ -31,7 +31,9 @@
 	s - seconds (00-59)
 	a - (am or pm)
 	*/
-
+	
+	//this sets the timezone. The quotes tell where to set it.
+	date_default_timezone_set("America/New_York"); 
 	//format still needs to be in quotes
 	echo "The time is " . date("h:i:sa"); //hours:minutes:seconds am or pm
 
